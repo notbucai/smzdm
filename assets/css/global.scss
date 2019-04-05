@@ -26,8 +26,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+html,body {
+	overflow: hidden;
 }
 ol, ul {
 	list-style: none;

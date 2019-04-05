@@ -1,19 +1,19 @@
 <template>
-  <section class="container">
-    <nuxt-child/>
+  <section>
+    <nuxt-child />
   </section>
 </template>
 
 <script>
 export default {
-  name: "Index",
-  
-  created() {
-  },
-  
+  name: "coupon",
+  created() {},
+  components: {
+    
+  }
 };
 </script>
 
 <style>
-
+  
 </style>
