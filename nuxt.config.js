@@ -39,6 +39,7 @@ module.exports = {
     "@/plugins/flexibleView.js",
     "@/plugins/axios.js",
     "@/plugins/scrollEvent.js",
+    "@/plugins/toast.js",
   ],
 
   /*
