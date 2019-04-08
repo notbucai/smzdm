@@ -1,7 +1,8 @@
 # Nuxt.js -> 什么值得买项目
 
-> 使用 nuxt.js 开发 spa 项目
+> 使用 nuxt.js 开发 spa 项目  
 
+> http://smzdm.ncgame.cc 
 
 ## Build Setup
 
