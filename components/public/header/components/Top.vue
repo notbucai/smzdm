@@ -5,7 +5,7 @@
       <img src="//res.smzdm.com/mobile/wap_v2/dist/img/embed/logo.png" alt="logo">
     </nuxt-link>
     <!-- 触发搜索 -->
-    <div class="h-search">
+    <div class="h-search" @click="handleGoSearch">
       <me-input class="h-input" :isMark="true" />
     </div>
   </section>
@@ -17,6 +17,11 @@ export default {
   name:"Top",
   components: {
     MeInput
+  },
+  methods:{
+    handleGoSearch(){
+      this.$router.push("/search");
+    }
   }
 };
 </script>
