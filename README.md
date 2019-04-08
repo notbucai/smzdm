@@ -4,6 +4,23 @@
 
 > http://smzdm.ncgame.cc 
 
+
+## 页面展示
+<!-- ![1](./_introduce/1.jpg) -->
+
+<img src="./_introduce/1.jpg" width="200px">
+<img src="./_introduce/2.jpg" width="200px">
+<img src="./_introduce/3.jpg" width="200px">
+<img src="./_introduce/4.jpg" width="200px">
+<img src="./_introduce/5.jpg" width="200px">
+<img src="./_introduce/6.jpg" width="200px">
+<img src="./_introduce/7.jpg" width="200px">
+<img src="./_introduce/8.jpg" width="200px">
+<img src="./_introduce/9.jpg" width="200px">
+<img src="./_introduce/10.jpg" width="200px">
+
+
+
 ## Build Setup
 
 ``` bash
