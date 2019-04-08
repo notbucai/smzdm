@@ -1,6 +1,10 @@
 export const state = () => ({
   navlist: [
     {
+      url:"/coupon",
+      name:"优惠券",
+    },
+    {
       url:"/haitao",
       name:"海淘好价",
     },
@@ -15,10 +19,6 @@ export const state = () => ({
     {
       url:"/haowen",
       name:"好文",
-    },
-    {
-      url:"/coupon",
-      name:"优惠券",
     },
     {
       url:"/baicai",

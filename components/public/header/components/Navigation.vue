@@ -9,10 +9,10 @@
     </nav>
     <!-- 全部导航 -->
     <div class="all-tabs">
-      <div class="conent">
+      <nuxt-link to="/classify" class="conent">
         <i class="iconfont">&#xe7db;</i>
         <span>分类</span>
-      </div>
+      </nuxt-link>
     </div>
   </section>
 </template>
@@ -61,6 +61,7 @@ export default {
       padding-left: u(6);
       font-size: u(10);
       box-sizing: border-box;
+      text-decoration: none;
       span {
         color: #333;
         padding: u(6);

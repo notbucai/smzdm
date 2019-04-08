@@ -1,9 +1,9 @@
 <template>
   <section class="h-top">
     <!-- logo -->
-    <div class="h-logo">
+    <nuxt-link to="/" class="h-logo">
       <img src="//res.smzdm.com/mobile/wap_v2/dist/img/embed/logo.png" alt="logo">
-    </div>
+    </nuxt-link>
     <!-- 触发搜索 -->
     <div class="h-search">
       <me-input class="h-input" :isMark="true" />
@@ -37,6 +37,7 @@ export default {
     height: 100%;
     padding-left: u(12);
     width: auto;
+    text-decoration: none;
     img {
       display: block;
       height: 50%;
