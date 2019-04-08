@@ -1,7 +1,10 @@
 <template>
   <div class="one_warp">
+    <!-- 头部 -->
     <one-head v-bind="data.goods"/>
+    <!-- 身体 -->
     <one-body v-bind="data"/>
+    <!-- 固定在底部的工具 -->
     <div class="one-foot">
       <span>已领{{data.clickNum}}张</span>
       <button class="btn">立刻兑换</button>
@@ -10,6 +13,7 @@
 </template>
 
 <script>
+//  单个 优惠券 对应路由
 import OneHead from "@/components/coupon/one/oneHead.vue";
 import OneBody from "@/components/coupon/one/oneBody.vue";
 export default {

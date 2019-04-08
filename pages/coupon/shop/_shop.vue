@@ -1,11 +1,14 @@
 <template>
   <section class="shop">
+    <!-- 优惠券列表 -->
     <Coupont-item v-for="item in couponList" v-bind="item" :key="item.id"/>
+    <!-- 无线加载 -->
     <list-loading v-if="this.loadObj.loading"/>
   </section>
 </template>
 
 <script>
+// 每个商城对应的列表 如 京东优惠券 淘宝优惠券
 import CoupontItem from "@/components/coupon/couponItem/index.vue";
 import ListLoading from "@/components/public/loading/List.vue";
 
@@ -36,6 +39,7 @@ export default {
     };
   },
   methods: {
+    // 无限滚动
     handleBottomLoad(event) {
       const { scrollHeight, scrollTop, clientHeight } = event.target;
       const curr_height = scrollHeight - scrollTop - clientHeight;

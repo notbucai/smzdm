@@ -1,6 +1,8 @@
 <template>
   <div id="classify">
+    <!-- 左边盒子  -->
     <ul class="l_box">
+      <!-- 一级导航 -->
       <li
         v-for="(item,index) in list"
         :key="item.id"
@@ -8,19 +10,21 @@
         @click="handleChangeCurrendIndex(index)"
       >{{item.name}}</li>
     </ul>
+    <!-- 右边盒子 -->
     <div class="r_box">
       <nuxt-link :to="'/classify/'+list[0].id" class="level_one">
         全部
         <i class="iconfont right">&#xe65b;</i>
       </nuxt-link>
-
+      <!-- 二级导航 -->
       <template v-if="list[0]">
         <div class="level_two" v-for="(item) in list[currentIndex].children" :key="item.id">
+          <!-- 三级导航 -->
           <nuxt-link v-if="item.isUrl" class="level_one" :to="'/classify/'+item.id">
             <i class="iconfont right">&#xe65b;</i>
           </nuxt-link>
           <div v-else class="level_one">{{item.name}}</div>
-
+          
           <div class="level_warp">
             <nuxt-link v-for="(_item) in item.children" :key="_item.id" :to="'/classify/'+_item.id">{{_item.name}}</nuxt-link>
           </div>

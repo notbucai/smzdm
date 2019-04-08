@@ -1,7 +1,10 @@
 <template>
   <div class>
+    <!-- 首页banner -->
     <banner :list="bannerList"/>
+    <!-- 首页商品列表 -->
     <p-list :list="pData.list" :type="pData.type"/>
+    <!-- 底部加载 -->
     <list-loading v-if="this.loadObj.loading"/>
   </div>
 </template>
@@ -14,8 +17,10 @@ import ListLoading from "@/components/public/loading/List.vue";
 export default {
   name: "home",
   created() {
+    // 重置 滚动事件
     this.$scrollEvent.reset();
     setTimeout(() => {
+      // 延时绑定自己的处理函数
       this.$scrollEvent.use(this.handleBottomLoad);
     }, 500);
   },
@@ -46,6 +51,7 @@ export default {
   },
   methods: {
     handleBottomLoad(event) {
+      // 无限滚动
       const { scrollHeight, scrollTop, clientHeight } = event.target;
       const curr_height = scrollHeight - scrollTop - clientHeight;
       if (curr_height > 50) {

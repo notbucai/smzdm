@@ -1,9 +1,11 @@
 <template>
   <section class="coupon">
+    <!-- 头部 -->
     <header class="coupon-header" ref="header">
       <banner :list="bannerList"/>
       <shop-list :list="shopList"/>
     </header>
+    <!-- 优惠列表 -->
     <section ref="coupon_list">
       <coupon-list
         :navs="navs"
@@ -14,6 +16,7 @@
         @changeQuery="handleSwitchQuery"
       />
     </section>
+    <!-- 无限加载 -->
     <list-loading v-if="this.loadObj.loading"/>
   </section>
 </template>
